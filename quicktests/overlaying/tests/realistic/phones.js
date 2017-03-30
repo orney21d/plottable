@@ -65,7 +65,6 @@ function run(svg, data, Plottable) {
   colorScale.range([AusColor, IndColor, RoKColor]);
 
   var legend = new Plottable.Components.Legend(colorScale)
-    .maxEntriesPerRow(3)
     .xAlignment("left");
 
   var AusDataset = new Plottable.Dataset(data.australia);

@@ -253,7 +253,31 @@
   cursor: ns-resize;
 }
 
-.plottable .legend text {
+.plottable .legend-entry-container {
+  align-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  overflow: auto;
+  position: relative;
+  width: 100%;
+  padding: 5px;
+}
+
+.plottable .legend-entry {
+  margin-right: 10px;
+  word-break: break-all;
+}
+
+.plottable .legend-symbol {
+  display: inline-block;
+  width: 0.6em;
+  height: 0.6em;
+  margin-right: 5px;
+  vertical-align: center;
+}
+
+.plottable .legend-name {
   fill: #32313F;
   font-family: "Helvetica Neue", sans-serif;
   font-size: 12px;
